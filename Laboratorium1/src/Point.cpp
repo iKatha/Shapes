@@ -18,4 +18,8 @@ void Point::setY(const double & y){
 	this->y=y;
 }
 
+Point Point::operator-(const Point & p)const{
+	Point point( x-p.getX(), y-p.getY());
+	return point;
+}
 

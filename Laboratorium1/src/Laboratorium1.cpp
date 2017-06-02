@@ -39,8 +39,11 @@ int main() {
 	r.setPosition(p);
 	operacja o =roznicaSymetryczna;
 	ComplexShape cs(c,r,o);
-	ComplexShape cs2(cs,r,o);
+	operacja o2 =suma;
+	ComplexShape cs2(cs,r,o2);
+	cs2.setPosition(Point(30,15));
 	Point start(0,0);
 	Point end(100,100);
 	draw(start,end,cs,100,100);
+	draw(start,end,cs2,100,100);
 }

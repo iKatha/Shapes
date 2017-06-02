@@ -18,7 +18,8 @@ Circle::~Circle() {
 }
 
 bool Circle::isIn(const Point & p)const{
-	double d = sqrt( pow(p.getX()-position.getX(),2) + pow(p.getY()-position.getY(),2));
+	Point t=p-position;
+	double d = sqrt( pow(t.getX(),2) + pow(t.getY(),2));
 	if(d<=r)
 		return true;
 	else

@@ -18,6 +18,7 @@ public:
 	double getY()const{return y;};
 	void setX(const double & x);
 	void setY(const double & y);
+	Point operator-(const Point & p)const;
 };
 
 #endif /* POINT_H_ */

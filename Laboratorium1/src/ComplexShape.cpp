@@ -14,21 +14,22 @@ ComplexShape::ComplexShape(Shape & s1, Shape & s2,operacja & o){
 }
 
 bool ComplexShape::isIn(const Point & p)const{
+	Point t = p-position;
 	switch(o){
 	case suma:
-		if(shape1->isIn(p)|| shape2->isIn(p) )
+		if(shape1->isIn(t)|| shape2->isIn(t) )
 			return true;
 		break;
 	case iloczyn:
-		if(shape1->isIn(p)&& shape2->isIn(p) )
+		if(shape1->isIn(t)&& shape2->isIn(t) )
 			return true;
 		break;
 	case roznica:
-		if(shape1->isIn(p)&& !shape2->isIn(p) )
+		if(shape1->isIn(t)&& !shape2->isIn(t) )
 			return true;
 		break;
 	case roznicaSymetryczna:
-		if((shape1->isIn(p) || shape2->isIn(p)) && !(shape1->isIn(p) && shape2->isIn(p)))
+		if((shape1->isIn(t) || shape2->isIn(t)) && !(shape1->isIn(t) && shape2->isIn(t)))
 			return true;
 		break;
 	}

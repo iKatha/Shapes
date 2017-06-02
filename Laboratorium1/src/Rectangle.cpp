@@ -18,5 +18,6 @@ Rectangle::~Rectangle() {
 }
 
 bool Rectangle::isIn(const Point & p)const{
-	return ((abs(p.getX()-position.getX()) < width/2) && (abs(p.getY()-position.getY()) < height/2));
+	Point t = p-position;
+	return ((abs(t.getX()) < width/2) && (abs(t.getY()) < height/2));
 }
