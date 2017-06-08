@@ -11,13 +11,13 @@
 #include "Operacja.h"
 class ComplexShape:public Shape {
 private:
-	Shape * shape1;
-	Shape * shape2;
-	operacja o;
+	const Shape * shape1;
+	const Shape * shape2;
+	const operacja o;
 public:
-	ComplexShape(Shape & s1, Shape & s2,operacja & o);
+	ComplexShape(const Shape & s1,const Shape & s2,const operacja & o);
 	virtual ~ComplexShape(){}
-	bool isIn(const Point & p)const;
+	bool isIn(const Point & p)const override;
 };
 
 #endif /* COMPLEXSHAPE_H_ */

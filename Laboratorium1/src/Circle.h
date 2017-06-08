@@ -16,7 +16,7 @@ private:
 public:
 	Circle(const double  & r);
 	virtual ~Circle();
-	bool isIn(const Point & p)const;
+	bool isIn(const Point & p)const override;
 };
 
 #endif /* CIRCLE_H_ */

@@ -9,9 +9,7 @@
 #include <cmath>
 #include <stdlib.h>
 
-Rectangle::Rectangle(const double & width, const double & height) {
-	this->width=width;
-	this->height=height;
+Rectangle::Rectangle(const double & width, const double & height):width(width),height(height) {
 }
 
 Rectangle::~Rectangle() {

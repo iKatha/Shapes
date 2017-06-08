@@ -16,7 +16,7 @@ private:
 public:
 	Rectangle(const double & width, const double & height);
 	virtual ~Rectangle();
-	bool isIn(const Point & p)const;
+	bool isIn(const Point & p)const override;
 };
 
 #endif /* RECTANGLE_H_ */

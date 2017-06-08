@@ -41,7 +41,7 @@ int main() {
 	ComplexShape cs(c,r,o);
 	operacja o2 =suma;
 	ComplexShape cs2(cs,r,o2);
-	cs2.setPosition(Point(30,15));
+	//cs2.setPosition(p);
 	Point start(0,0);
 	Point end(100,100);
 	draw(start,end,cs,100,100);

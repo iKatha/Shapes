@@ -7,10 +7,7 @@
 
 #include "ComplexShape.h"
 
-ComplexShape::ComplexShape(Shape & s1, Shape & s2,operacja & o){
-	this->shape1=&s1;
-	this->shape2=&s2;
-	this->o=o;
+ComplexShape::ComplexShape(const Shape & s1,const Shape & s2,const operacja & o):shape1(&s1),shape2(&s2),o(o){
 }
 
 bool ComplexShape::isIn(const Point & p)const{

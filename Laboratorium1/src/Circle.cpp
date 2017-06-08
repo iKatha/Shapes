@@ -8,9 +8,7 @@
 #include "Circle.h"
 #include <cmath>
 
-Circle::Circle(const double  & r) {
-	this->r=r;
-
+Circle::Circle(const double  & r):r(r) {
 }
 
 Circle::~Circle() {
