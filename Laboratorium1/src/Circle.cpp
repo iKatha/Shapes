@@ -11,6 +11,9 @@
 Circle::Circle(const double  & r):r(r) {
 }
 
+Circle::Circle(const double  & r,const Point & p):Shape(p), r(r) {
+}
+
 Circle::~Circle() {
 	// TODO Auto-generated destructor stub
 }

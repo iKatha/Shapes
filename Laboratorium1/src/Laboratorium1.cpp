@@ -33,8 +33,8 @@ void draw(Point & start,Point & end,Shape & shape, int  resolutionX, int resolut
 
 int main() {
 	Point p(20,40);
-	Circle c(4);
-	c.setPosition(p);
+	Circle c(4,p);
+	//c.setPosition(p);
 	Rectangle r(20,6);
 	r.setPosition(p);
 	operacja o =roznicaSymetryczna;

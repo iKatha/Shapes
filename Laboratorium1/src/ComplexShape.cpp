@@ -10,6 +10,9 @@
 ComplexShape::ComplexShape(const Shape & s1,const Shape & s2,const operacja & o):shape1(&s1),shape2(&s2),o(o){
 }
 
+ComplexShape::ComplexShape(const Shape & s1,const Shape & s2,const Point & p,const operacja & o):Shape(p),shape1(&s1),shape2(&s2),o(o){
+}
+
 bool ComplexShape::isIn(const Point & p)const{
 	Point t = p-position;
 	switch(o){

@@ -14,6 +14,7 @@ protected:
 	Point  position;
 public:
 	Shape(): position(0, 0){};
+	Shape(const Point & p): position(p){};
 	virtual ~Shape(){};
 	virtual bool isIn(const Point & p)const=0;
 	void setPosition(const Point & p){position=p;};

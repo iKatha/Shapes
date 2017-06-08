@@ -15,6 +15,7 @@ private:
 	double height;
 public:
 	Rectangle(const double & width, const double & height);
+	Rectangle(const double & width, const double & height,const Point & p );
 	virtual ~Rectangle();
 	bool isIn(const Point & p)const override;
 };

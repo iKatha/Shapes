@@ -12,6 +12,9 @@
 Rectangle::Rectangle(const double & width, const double & height):width(width),height(height) {
 }
 
+Rectangle::Rectangle(const double & width, const double & height,const Point & p):Shape(p),width(width),height(height) {
+}
+
 Rectangle::~Rectangle() {
 }
 
